@@ -53,113 +53,96 @@
 
 Allowed Commands in **macrofile.dat** file:
 
+
 ```
    DWH: WWW HHH
 ```
  
-     **D**esctop **W**idth and **H**eight definitions for macro execution
-     control. If DWH is specified and actual desktop resolution
-     has different values the macro will not be executed.
+>     **D**esctop **W**idth and **H**eight definitions for macro execution control. If DWH is specified and actual desktop resolution has different values the macro will not be executed.
 
 ```
    SCW: ChildWinName | (ChildWinClass)
 ```
 
-     **S**elect **C**hild **W**indow to send input events.
+>     **S**elect **C**hild **W**indow to send input events.
 
 ```
    SMW:
 ```
 
-     **S**elect **M**ain **W**indow to send input events.
+>     **S**elect **M**ain **W**indow to send input events.
 
 ```
    SLP: NNN
 ```
 
-     **SL**ee**P** NNN milliseconds.
+>     **SL**ee**P** NNN milliseconds.
 
 ```
    SWM:
 ```
 
-     **S**et **W**indow **M**aximized. It's usefull, for example, if you are
-     operating with mouse events for best positioning of mouse
-     cursor (when you use the MSP command).
+>     **S**et **W**indow **M**aximized. It's usefull, for example, if you are operating with mouse events for best positioning of mouse cursor (when you use the MSP command).
 
 ```
    SWF:
 ```
 
-     **S**et **W**indow to **F**oreground brings the target window to top.
+>     **S**et **W**indow to **F**oreground brings the target window to top.
 
 ```
    SWB:
 ```
 
-     **S**et **W**indow to **B**ackground makes the target window invizible.
+>     **S**et **W**indow to **B**ackground makes the target window invizible.
 
 ```
    MSP: xPos yPos
 ```
 
-     **M**ouse **S**et **P**osition to xPos and yPos desktop point.
+>     **M**ouse **S**et **P**osition to xPos and yPos desktop point.
 
 ```
    MLC:
 ```
 
-     **M**ouse **L**eft button **C**lick.
+>     **M**ouse **L**eft button **C**lick.
 
 ```
    MRC:
 ```
 
-     **M**ouse **R**ight button **C**lick.
+>     **M**ouse **R**ight button **C**lick.
 
 ```
    MMC:
 ```
 
-     **M**ouse **M**idle button **C**lick.
+>     **M**ouse **M**idle button **C**lick.
 
 ```
    MWU:
 ```
 
-     **M**ouse **W**heel **U**p (target window must be selected exactly).
+>     **M**ouse **W**heel **U**p (target window must be selected exactly).
 
 ```
    MWD:
 ```
 
-     **M**ouse **W**heel **D**own (target window must be selected exactly).
+>     **M**ouse **W**heel **D**own (target window must be selected exactly).
 
 
 ```
    KSC: [MOD] KEY
 ```
 
-     **K**eyboard, **S**end **C**ommand.
-     Where MOD is a modifier of KEY value from list: CTRL, SHIFT,
-     ALT. You can provide a few modifiers at once separated by '+'
-     character (for example, CTRL+SHIFT).
-     KEY is an optional parameter, that is not to be used whith
-     the single-style modifiers: ENTER, DELETE, BACKSPACE, TAB,
-     ESCAPE, F1,.. F12, LEFTARROW, RIGHTARROW, UPARROW, DOWNARROW,
-     etc.
+>     **K**eyboard, **S**end **C**ommand. Where MOD is a modifier of KEY value from list: CTRL, SHIFT, ALT. You can provide a few modifiers at once separated by '+' character (for example, CTRL+SHIFT). KEY is an optional parameter, that is not to be used whith the single-style modifiers: ENTER, DELETE, BACKSPACE, TAB, ESCAPE, F1,.. F12, LEFTARROW, RIGHTARROW, UPARROW, DOWNARROW, etc.
 
 ```
    KSL: StringLine
 ```
 
-     **K**eyboard, **S**end **L**ine.
-     The command sends chars from StringLine as keyboard input.
-     If the StringLine parameter is not given it will use '/L'
-     CLI argument as default StringLine. Note: You cannot input
-     the '\"', '<' and '>' chars this way, because these are the
-     special symbols in the Windows Command Line Interface.
-     You can easy use 'shifted' chars in the StringLine parameter,
-     the KSL command will send them with SHIFT modifier.
-     But you cannot use any symbols of international ABCs.
+>     **K**eyboard, **S**end **L**ine. The command sends chars from StringLine as keyboard input. If the StringLine parameter is not given it will use '/L' CLI argument as default StringLine. Note: You cannot input the '\"', '<' and '>' chars this way, because these are the special symbols in the Windows Command Line Interface. You can easy use 'shifted' chars in the StringLine parameter, the KSL command will send them with SHIFT modifier. But you cannot use any symbols of international ABCs.
+
 
