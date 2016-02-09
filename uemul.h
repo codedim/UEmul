@@ -14,7 +14,7 @@
 
 /* program CLI uses information */
 #define USES "is a command line User-input Emulator tool.\n\
-\nMain uses:\n\n\
+\nMain usage:\n\n\
    UEMUL [/w WinName] | [/c WinClass] /m InputMacro.dat [/l StringLine] [/v]\n\
 \n where\n\
    WinName        - title of target window to send input events;\n\
@@ -23,7 +23,7 @@
    InputMacro.dat - name of file whith user's input macro commands;\n\
    StringLine     - text data to send as default keyboard input;\n\
    /v             - verbose mode.\n\
-\nHelp uses:\n\n\
+\nHelp usage:\n\n\
    UEMUL /h\n\
 \n print help information about InputMacro.dat file format.\n\
 \nExamples:\n\n\
