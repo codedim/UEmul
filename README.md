@@ -59,7 +59,7 @@ Allowed Commands in **macrofile.dat** file:
 ```
  
 >     
-**D**esctop **W**idth and **H**eight definitions for macro execution control. If DWH is specified and actual desktop resolution has different values the macro will not be executed.
+**D**esctop **W**idth and **H**eight definitions for macro execution control. If **DWH** command is specified and actual desktop resolution has different values the macro will not be executed.
 
 ```
    SCW: ChildWinName | (ChildWinClass)
@@ -87,7 +87,7 @@ Allowed Commands in **macrofile.dat** file:
 ```
 
 >     
-**S**et **W**indow **M**aximized. It's usefull, for example, if you are operating with mouse events for best positioning of mouse cursor (when you use the MSP command).
+**S**et **W**indow **M**aximized. It's usefull, for example, if you are operating with mouse events for best positioning of mouse cursor (when you use the **MSP** command).
 
 ```
    SWF:
@@ -151,13 +151,13 @@ Allowed Commands in **macrofile.dat** file:
 ```
 
 >     
-**K**eyboard, **S**end **C**ommand. Where MOD is a modifier of KEY value from list: CTRL, SHIFT, ALT. You can provide a few modifiers at once separated by '+' character (for example, CTRL+SHIFT). KEY is an optional parameter, that is not to be used whith the single-style modifiers: ENTER, DELETE, BACKSPACE, TAB, ESCAPE, F1,.. F12, LEFTARROW, RIGHTARROW, UPARROW, DOWNARROW, etc.
+**K**eyboard, **S**end **C**ommand. Where **MOD** is a modifier of **KEY** value from list: **CTRL, SHIFT, ALT**. You can provide a few modifiers at once separated by '+' character (for example, **CTRL+SHIFT**). **KEY** is an optional parameter, that is not to be used whith the single-style modifiers: **ENTER, DELETE, BACKSPACE, TAB, ESCAPE, F1,.. F12, LEFTARROW, RIGHTARROW, UPARROW, DOWNARROW,** etc.
 
 ```
    KSL: StringLine
 ```
 
 >     
-**K**eyboard, **S**end **L**ine. The command sends chars from StringLine as keyboard input. If the StringLine parameter is not given it will use '/L' CLI argument as default StringLine. Note: You cannot input the '\"', '<' and '>' chars this way, because these are the special symbols in the Windows Command Line Interface. You can easy use 'shifted' chars in the StringLine parameter, the KSL command will send them with SHIFT modifier. But you cannot use any symbols of international ABCs.
+**K**eyboard, **S**end **L**ine. The command sends chars from **StringLine** as keyboard input. If the **StringLine** parameter is not given it will use **/L** CLI argument as default **StringLine**. Note: You cannot input the '"', '<' and '>' chars this way, because these are the special symbols in the Windows Command Line Interface. You can easy use 'shifted' chars in the **StringLine** parameter, the **KSL** command will send them with **SHIFT** modifier. But you cannot use any symbols of international ABCs.
 
 
