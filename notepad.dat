@@ -1,0 +1,83 @@
+# specify desktop resolution if you need, 
+# or not - for all resolutions support
+#DWH: 1280 1024
+
+# set window to foreground
+SWF
+
+# mouse pointer to x=300, y=200
+MSP: 300 200
+
+# left button click
+MLC:
+
+# sleep one second
+SLP: 1000
+
+# test output of basic charachters
+KSL: `1234567890-=qwertyuiop[]\asdfghjkl;'zxcvbnm,./
+
+# new line
+KSC: [ENTER]
+
+# two seconds pause
+SLP: 2000
+
+# test output of shifted charachters
+KSL: ~!@#$%^&*()_+QWERTYUIOP{}|ASDFGHJKL:"ZXCVBNM<>?
+
+KSC: [ENTER]
+SLP: 2000
+
+# argument string output
+KSL:
+
+KSC: [ENTER]
+SLP: 1000
+
+# select a child window 
+SCW: (Edit)
+# scrolling down
+MWD:
+
+############################################
+
+# test multiple KSC combinations:
+
+# test CTRL+A
+KSC: [CTRL] A
+SLP: 1000
+KSC: [RIGHTARROW]
+SLP: 1000
+
+# test CTRL+LEFTARROW
+KSC: [CTRL+LEFTARROW]
+SLP: 1000
+
+# test CTRL+SHIFT+LEFTARROW
+KSC: [CTRL+SHIFT+LEFTARROW]
+SLP: 1000
+KSC: [CTRL+SHIFT+LEFTARROW]
+SLP: 1000
+KSC: [CTRL+SHIFT+LEFTARROW]
+
+# test CTRL+C
+KSC: [CTRL] C
+SLP: 1000
+
+# test CTRL+END
+KSC: [CTRL+END]
+SLP: 1000
+
+# test SHIFT+INS
+KSC: [SHIFT+INS]
+SLP: 1000
+
+#KSC: [CTRL+ALT+DEL] - will not work
+
+
+############################################
+
+# use 'uemul /h' to get more information
+
+
