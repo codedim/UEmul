@@ -15,11 +15,12 @@
 *   WinName        - title of target window to send input events;
 *   WinClass       - class of target window to send input events;
 
-                    (you can provide both or only one of them)
+> (you can provide both or only one of them)
 
 *   InputMacro.dat - name of file whith user's input macro commands;
 *   StringLine     - text data to send as default keyboard input;
 *   /v             - verbose mode.
+
 
 #### Help usage:
 
@@ -28,6 +29,7 @@
 ```
   
  print information about InputMacro.dat file format.
+
 
 #### Examples:
 
@@ -46,68 +48,83 @@
  file with default string line "test".
 
 
-## Macro-commands:
 
-Allowed Commands in InputMacro.dat file:
+## Macro-command list:
+
+Allowed Commands in **macrofile.dat** file:
 
 ```
-*   DWH: WWW HHH
+   DWH: WWW HHH
 ```
      **D**esctop **W**idth and **H**eight definitions for macro execution
      control. If DWH is specified and actual desktop resolution
      has different values the macro will not be executed.
+
 ```
-*   SCW: ChildWinName | (ChildWinClass)
+   SCW: ChildWinName | (ChildWinClass)
 ```
      **S**elect **C**hild **W**indow to send input events.
+
 ```
-*   SMW:
+   SMW:
 ```
      **S**elect **M**ain **W**indow to send input events.
+
 ```
-*   SLP: NNN
+   SLP: NNN
 ```
      **SL**ee**P** NNN milliseconds.
+
 ```
-*   SWM:
+   SWM:
 ```
      **S**et **W**indow **M**aximized. It's usefull, for example, if you are
      operating with mouse events for best positioning of mouse
      cursor (when you use the MSP command).
+
 ```
-*   SWF:
+   SWF:
 ```
      **S**et **W**indow to **F**oreground brings the target window to top.
+
 ```
-*   SWB:
+   SWB:
 ```
      **S**et **W**indow to **B**ackground makes the target window invizible.
+
 ```
-*   MSP: xPos yPos
+   MSP: xPos yPos
 ```
      **M**ouse **S**et **P**osition to xPos and yPos desktop point.
+
 ```
-*   MLC:
+   MLC:
 ```
      **M**ouse **L**eft button **C**lick.
+
 ```
-*   MRC:
+   MRC:
 ```
      **M**ouse **R**ight button **C**lick.
+
 ```
-*   MMC:
+   MMC:
 ```
      **M**ouse **M**idle button **C**lick.
+
 ```
-*   MWU:
+   MWU:
 ```
      **M**ouse **W**heel **U**p (target window must be selected exactly).
+
 ```
-*   MWD:
+   MWD:
 ```
      **M**ouse **W**heel **D**own (target window must be selected exactly).
+
+
 ```
-*   KSC: [MOD] KEY
+   KSC: [MOD] KEY
 ```
      **K**eyboard, **S**end **C**ommand.
      Where MOD is a modifier of KEY value from list: CTRL, SHIFT,
@@ -117,8 +134,9 @@ Allowed Commands in InputMacro.dat file:
      the single-style modifiers: ENTER, DELETE, BACKSPACE, TAB,
      ESCAPE, F1,.. F12, LEFTARROW, RIGHTARROW, UPARROW, DOWNARROW,
      etc.
+
 ```
-*   KSL: StringLine
+   KSL: StringLine
 ```
      **K**eyboard, **S**end **L**ine.
      The command sends chars from StringLine as keyboard input.
